@@ -16,7 +16,7 @@ body {
 }
 
 .wrapper {
-    padding-top: 4rem;
+    padding-top: 2rem;
     width: 90%;
     margin: 0 auto;
     text-align: center;
@@ -24,23 +24,63 @@ body {
 
 .quote {
     font-family: 'Julius Sans One', sans-serif;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
 }
 
 p {
     display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
+    margin-block-start: .5em;
+    margin-block-end: .5em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
 }
 
 .author {
     font-family: 'Crimson Text', serif;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-style: italic;
 }
 
 small {
     font-size: smaller;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav a img {
+    margin-top: 10rem;
+    width: 3%;
+}
+
+
+@media (min-width: 768px) {
+    .wrapper {
+        padding-top: 4rem;
+    }
+
+    .quote {
+        font-size: 2.5rem;
+    }
+
+    p {
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+    }
+
+    .author {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 1180px) {
+    .wrapper {
+        padding-top: 12rem;
+    }
 }
